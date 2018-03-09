@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Inspo</string>
+    <string name="name_hint">Name</string>
+    <string name="maths345x29">What is 345 times 29?</string>
+    <string name="correct11">10005</string>
+    <string name="incorrect11">785935</string>
+    <string name="incorrect12">333335</string>
+    <string name="capital_of_ukraine">What is the capital of Ukraine?</string>
+    <string name="incorrect21">Odessa</string>
+    <string name="correct21">Kyiv</string>
+    <string name="incorrect22">Kiev</string>
+    <string name="horror_writers">Which of the following are horror writers?</string>
+    <string name="correct31">H. P. Lovecraft</string>
+    <string name="incorrect31">Mark Twain</string>
+    <string name="correct32">Edgar Allan Poe</string>
+    <string name="incorrect32">Mark Forsyth</string>
+    <string name="incorrect33">Kevin Dutton</string>
+    <string name="just_do_it">Sit down at the desk and tackle the task at hand</string>
+    <string name="apple_founders">Who was not the initial founder of Apple</string>
+    <string name="incorrect41">Steve Jobs</string>
+    <string name="incorrect42">Steve Wozniak</string>
+    <string name="correct41">Tim Cook</string>
+    <string name="incorrect43">Ronald Wayne</string>
+    <string name="check">Check score!</string>
+    <string name="thanks">Thank you!</string>
+
+</resources>

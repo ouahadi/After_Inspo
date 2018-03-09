@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context="rocks.lechick.android.inspo.MainActivity">
+
+    <rocks.lechick.android.inspo.CutLayout
+        android:id="@+id/cropped_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imagine_dragons" />
+    </rocks.lechick.android.inspo.CutLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/name_hint"
+                android:inputType="textCapWords"
+                android:textColor="#fffafa"
+                android:textColorHint="@android:color/white"
+                android:theme="@style/MyCheckBox" />
+
+            <TextView
+                android:id="@+id/maths345x29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/maths345x29"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16sp">
+
+                <RadioButton
+                    android:id="@+id/correct11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/correct11"
+                    android:textColor="#fffafa"
+                    android:textSize="24sp"
+                    android:theme="@style/MyCheckBox" />
+
+                <RadioButton
+                    android:id="@+id/incorrect11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/incorrect11"
+                    android:textColor="#fffafa"
+                    android:textSize="24sp"
+                    android:theme="@style/MyCheckBox" />
+
+                <RadioButton
+                    android:id="@+id/incorrect12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/incorrect12"
+                    android:textColor="#fffafa"
+                    android:textSize="24sp"
+                    android:theme="@style/MyCheckBox" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question_capital_of_ukraine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/capital_of_ukraine"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16sp">
+
+                <RadioButton
+                    android:id="@+id/incorrect21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/incorrect21"
+                    android:textColor="#fffafa"
+                    android:textSize="24sp"
+                    android:theme="@style/MyCheckBox" />
+
+                <RadioButton
+                    android:id="@+id/correct21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/correct21"
+                    android:textColor="#fffafa"
+                    android:textSize="24sp"
+                    android:theme="@style/MyCheckBox" />
+
+                <RadioButton
+                    android:id="@+id/incorrect22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/incorrect22"
+                    android:textColor="#fffafa"
+                    android:textSize="24sp"
+                    android:theme="@style/MyCheckBox" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question_horror_writers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/horror_writers"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/correct31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/correct31"
+                android:textColor="#fffafa"
+                android:textSize="24sp"
+                android:theme="@style/MyCheckBox" />
+
+            <CheckBox
+                android:id="@+id/incorrect31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/incorrect31"
+                android:textColor="#fffafa"
+                android:textSize="24sp"
+                android:theme="@style/MyCheckBox" />
+
+            <CheckBox
+                android:id="@+id/correct32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/correct32"
+                android:textColor="#fffafa"
+                android:textSize="24sp"
+                android:theme="@style/MyCheckBox" />
+
+            <CheckBox
+                android:id="@+id/incorrect32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/incorrect32"
+                android:textColor="#fffafa"
+                android:textSize="24sp"
+                android:theme="@style/MyCheckBox" />
+
+            <CheckBox
+                android:id="@+id/incorrect33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/incorrect33"
+                android:textColor="#fffafa"
+                android:textSize="24sp"
+                android:theme="@style/MyCheckBox" />
+
+            <TextView
+                android:id="@+id/question_apple_founders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/apple_founders"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <RadioGroup
+                android:id="@+id/rg3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16sp">
+
+                <RadioButton
+                    android:id="@+id/incorrect41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/incorrect41"
+                    android:textColor="#fffafa"
+                    android:textSize="24sp"
+                    android:theme="@style/MyCheckBox" />
+
+                <RadioButton
+                    android:id="@+id/incorrect42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/incorrect42"
+                    android:textColor="#fffafa"
+                    android:textSize="24sp"
+                    android:theme="@style/MyCheckBox" />
+
+                <RadioButton
+                    android:id="@+id/correct41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/correct41"
+                    android:textColor="#fffafa"
+                    android:textSize="24sp"
+                    android:theme="@style/MyCheckBox" />
+
+                <RadioButton
+                    android:id="@+id/incorrect43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/incorrect43"
+                    android:textColor="#fffafa"
+                    android:textSize="24sp"
+                    android:theme="@style/MyCheckBox" />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                android:onClick="Summarise"
+                android:padding="8dp"
+                android:text="@string/check"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/thanks"
+                android:textAlignment="center"
+                android:textColor="#fffafa"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
