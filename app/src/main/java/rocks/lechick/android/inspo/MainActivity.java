@@ -8,6 +8,9 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Objects;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -18,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     int score;
     String customerName;
     String createMessage;
+    String year_answered;
+    String correct_year;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +33,13 @@ public class MainActivity extends AppCompatActivity {
     public void Summarise(View view) {
         EditText name = (EditText) findViewById(R.id.name);
         customerName = name.getText().toString();
+        EditText year_entered = (EditText) findViewById(R.id.year_answer);
+        year_answered = year_entered.getText().toString();
+        correct_year = getString(R.string.correct_year);
         calculateScore();
         createMessage();
-        TextView result = findViewById(R.id.answer);
-        result.setText(createMessage);
+        Toast.makeText(getApplicationContext(), createMessage, Toast.LENGTH_LONG).show();
+        score = 0;
     }
 
     public void calculateScore() {
@@ -43,6 +51,15 @@ public class MainActivity extends AppCompatActivity {
         rg3checked = rg3.getCheckedRadioButtonId();
         CheckBox correct31 = (CheckBox) findViewById(R.id.correct31);
         CheckBox correct32 = (CheckBox) findViewById(R.id.correct32);
+        CheckBox incorrect31 = (CheckBox) findViewById(R.id.incorrect31);
+        CheckBox incorrect32 = (CheckBox) findViewById(R.id.incorrect32);
+        CheckBox incorrect33 = (CheckBox) findViewById(R.id.incorrect33);
+
+
+
+        if (correct_year.equals(year_answered)) {
+            score = score + correct;
+        }
 
         if (rg1checked == R.id.correct11) {
             score = score + correct;
@@ -52,12 +69,12 @@ public class MainActivity extends AppCompatActivity {
             score = score + correct;
         }
 
-        if (correct31.isChecked()) {
+        if (correct31.isChecked() && correct32.isChecked()) {
             score = score + correct;
         }
 
-        if (correct32.isChecked()) {
-            score = score + correct;
+        if (incorrect31.isChecked() || incorrect32.isChecked() || incorrect33.isChecked()){
+            score = score - correct;
         }
 
         if (rg3checked == R.id.correct41) {

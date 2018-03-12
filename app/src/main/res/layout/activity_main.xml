@@ -42,6 +42,27 @@
                 android:theme="@style/MyCheckBox" />
 
             <TextView
+                android:id="@+id/year_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/year_question"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/year_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/year_hint"
+                android:inputType="textCapWords"
+                android:textColor="#fffafa"
+                android:textColorHint="@android:color/white"
+                android:theme="@style/MyCheckBox"  />
+
+            <TextView
                 android:id="@+id/maths345x29"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

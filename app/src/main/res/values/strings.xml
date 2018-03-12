@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Inspo</string>
     <string name="name_hint">Name</string>
+    <string name="year_question">Which year is it now?</string>
+    <string name="year_hint">Year</string>
+    <string name="correct_year">2018</string>
     <string name="maths345x29">What is 345 times 29?</string>
     <string name="correct11">10005</string>
     <string name="incorrect11">785935</string>
